@@ -17,6 +17,7 @@ Session được quản lý bởi **express-session**, lưu vào MongoDB qua **c
    ```bash
    git clone https://github.com/Tiuquoai/cookie_session_auth.git
    cd cookie_session_auth
+![Node Cookie Auth](./public/results/node%20cookie_auth.js.png)
 # a. Register
 
 Method: POST
@@ -33,8 +34,11 @@ Body (JSON):
 
 Kết quả: { "message": "User registered successfully!" }
 
-Ảnh test: register.png
-Kiểm tra DB: checkindata.png
+Ảnh test: 
+![Register](./public/results/register.png)
+Kiểm tra DB: 
+![Check Data](./public/results/checkindata.png)
+![Check Data1](./public/results/checkindata1.png)
 # b. Login
 
 Method: POST
@@ -53,9 +57,12 @@ Kết quả: { "message": "Login successful!" }
 
 Postman sẽ lưu cookie connect.sid.
 
-Ảnh test: login.png
-Cookie trong Postman: cookie.png
-Session lưu trong DB: checkindatalogin.png
+Ảnh test: 
+![Login](./public/results/login.png)
+Cookie trong Postman:
+![Cookie](./public/results/cookie.png)
+Session lưu trong DB: 
+![Check Data Login](./public/results/checkindatalogin.png)
 
 # c. Profile
 
@@ -72,7 +79,9 @@ Kết quả (VD):
   "username": "admin1",
   "__v": 0
 }
-Ảnh test: gotoprifile.png
+Ảnh test:
+![Go To Profile](./public/results/gotoprifile.png)
+
 # d. Logout
 
 Method: GET
@@ -80,4 +89,5 @@ Method: GET
 URL: http://localhost:3000/auth/logout
 
 Kết quả: { "message": "Logout successful!" }
-Ảnh test: gotologout.png
+Ảnh test:
+![Go To Logout](./public/results/gotologout.png)
